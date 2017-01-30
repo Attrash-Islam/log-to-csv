@@ -1,6 +1,6 @@
 # log-to-csv
 
-Log files Parser that takes the log files (often txt files) and insert them into some kind of pipe with regex <b>of your implementation</b> and returns a CSV format-like. The pipe will receive Line-By-Line, and will insert it into the pipe, moving to the next line until finishing the InputStream.
+Log files Parser that takes the log files (often txt files) and insert them into some kind of pipe with regex <b>of your implementation</b> and returns a CSV format-like. The pipe will receive Line-By-Line, and will proccess it throught the regex syntax, and will move to the next line until finishing the InputStream.
 
 # What to do?
 
