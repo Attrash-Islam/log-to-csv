@@ -1,6 +1,6 @@
 {
   "name": "log-to-csv",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "log-to-csv",
   "main": "./dist/index.js",
   "typings": "./Interfaces/index.d.ts",
