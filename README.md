@@ -23,9 +23,8 @@ npm run build
 
 # Basic Usage
 
-- JavaScript
-
 ```js
+// TypeScript: import Log2Csv from 'log-to-csv';
 var log2Csv = require('../dist/index').default;
 var NotificationEventsParser = require('./NotificationEventsParser');
 
@@ -74,9 +73,6 @@ class NotificationEventsParser { // TypeScript: implements ILineParser
 
 module.exports = NotificationEventsParser;
 ```
-
-- TypeScript (Recommended)
-Just Add types for the Example above!
 
 # Live Demo (Parser in Examples folder)
 

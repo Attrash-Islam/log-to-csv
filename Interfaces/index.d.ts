@@ -2,12 +2,11 @@ export default Log2Csv;
 export { Log2Csv, ILineParser };
 
 declare class Log2Csv {
-    new(
+    constructor (
         fileName:string,
         lineParser:ILineParser,
         onLineParserFinish:Function
     );
-
     parse():void;
 }
 
