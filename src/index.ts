@@ -4,6 +4,8 @@ import { ILineReader } from '../Interfaces/ILineReader';
 import LineReader from './LineReader';
 import { ILineParser } from '../Interfaces/ILineParser';
 
+export { Log2Csv };
+
 /**
  * Main log-to-csv Entry Point
  * @author Islam Attrash
