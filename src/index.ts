@@ -36,7 +36,7 @@ export default class Log2Csv {
             .on(`line`, (line) => {
                 let parserRes = this.lineParser.getLineRegexValues(line);
                 if(parserRes) {
-                    parsersResult += this.lineParser.getLineRegexValues(line) + '\n';
+                    parsersResult += parserRes + '\n';
                 }
             })
             .on(`close`, () => {
