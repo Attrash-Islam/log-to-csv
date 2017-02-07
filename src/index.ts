@@ -24,8 +24,6 @@ export default class Log2Csv {
         this.lineReader = new LineReader(fileName);
         this.lineParser = lineParser;
         this.onLineParserFinish = onLineParserFinish;
-        // Append Headers for the CSV output format
-        process.stdout.write(this.lineParser.header);
     }
 
     parse() {
@@ -40,7 +38,7 @@ export default class Log2Csv {
                 }
             })
             .on(`close`, () => {
-                this.onLineParserFinish(parsersResult);
+                this.onLineParserFinish(this.lineParser.header + '\n' + parsersResult);
             });
     }
 
