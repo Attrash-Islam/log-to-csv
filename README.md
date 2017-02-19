@@ -24,9 +24,8 @@ npm run build
 # Basic Usage
 
 ```js
-// TypeScript: import Log2Csv from 'log-to-csv';
-var log2Csv = require('../dist/index').default;
-var NotificationEventsParser = require('./NotificationEventsParser');
+import Log2Csv from 'log-to-csv';
+import NotificationEventsParser from './Examples/NotificationEventsParser';
 
 var app = new log2Csv(
     'input.txt',
@@ -38,13 +37,16 @@ app.parse();
 ```
 
 ```js
-// TypeScript: import { ILineParser } from 'log-to-csv';
+import { ILineParser } from 'log-to-csv';
 
 /**
  * NotificationEventsParser Implementation example to fetch the relevant data in logs for `AndroidNotification` method
  * @author Islam Attrash
  */
-class NotificationEventsParser { // TypeScript: implements ILineParser
+export default class NotificationEventsParser implements ILineParser {
+
+    public regx:RegExp;
+    public header:string;
 
     constructor() {
         //Recognize Notification States
@@ -71,7 +73,6 @@ class NotificationEventsParser { // TypeScript: implements ILineParser
 
 }
 
-module.exports = NotificationEventsParser;
 ```
 
 # Live Demo (Parser in Examples folder)
