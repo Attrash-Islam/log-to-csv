@@ -33,5 +33,9 @@ export default class NotificationEventsParser implements ILineParser {
         }
     }
 
+    setTimeZoneOffset(offsetInMs:number) {
+        return 0;
+    }
+
 }
 
